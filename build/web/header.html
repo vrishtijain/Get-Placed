@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta HTTP-EQUIV="Pragma" content="no-cache">
+    <meta HTTP-EQUIV="Expires" content="-1"> 
+    </head>
+    
+    <style>
+        
+        body
+        {   background-size:  cover;
+           position:  relative;
+               
+               
+            background-image: url("qw.jpg");
+        }
+        marquee
+        {
+            font-size: 50px;
+            font-family:  cursive;
+          
+        }
+        .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+.sidenav {
+  left: 0;
+}
+    </style>
+    </head>
+    <body>
+       
+
+    <marquee>TRAINING AND PLACEMENT CELL</marquee>
+     <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="About.jsp">About us</a>
+  <a href="Contact.jsp">Contact</a>
+  <a href="KillSession">Logout</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+    </body>
+</html>
